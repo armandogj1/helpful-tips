@@ -5,7 +5,7 @@
 - Here is a lengthy example of a diagram, some values could be simply updated as you iterate through the steps:
 
 ```
-		      		[1, 8, 6, 2, 5, 4, 8, 3, 7]
+              [1, 8, 6, 2, 5, 4, 8, 3, 7]
 	i         =  0
 	j         =  0  1  2  3  4  5  6  7  8
 	width	    =  0  1  2  3  4  5  6  7  8
@@ -22,7 +22,7 @@
 
 	i         =        2
 	j         =        2  3  4  5  6  7  8
-	width     = 	     0  1  2  3  4  5  6
+	width     =        0  1  2  3  4  5  6
 	minHeight =        6  2  5  4  6  3  6
 	currArea  =        0  2 10 12 24 15 36
 	maxArea.  = 49 49 49 49 49 49 49 49 49
