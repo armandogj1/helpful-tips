@@ -29,3 +29,12 @@
 
 	//...
 ```
+
+- Iterating over an array looking for min value and calculate the max profit.
+
+```
+           [7, 1, 5, 3, 6, 4]
+i        =  0  1  2  3  4  5
+minPrice =  7  1  1  1  1  1
+maxProfit =  0  0  4  4  5  5
+```
