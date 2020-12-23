@@ -5,7 +5,7 @@
 - When rendering a component all values passed to it will be accessible on the props object as properties
 - Props should never be mutated, see them as read only values
 
-```javascript
+```jsx
 // App.jsx
 <FactsList facts={this.state.facts} />
 
@@ -20,7 +20,7 @@ const FactsList = (props) => {
 
 - Class and functional components get props but are accessed slightly differently
 
-```javascript
+```jsx
 // Class Component
   class App extends React.Component {
     //.....
@@ -36,7 +36,7 @@ const FactsList = (props) => {
 
 - Props can also be destructured, allowing us to use facts without having to type props
 
-```javascript
+```jsx
 const Fact = (props) => {
   //..
   <h1>{props.fact.animal}</h1>

@@ -1,9 +1,3 @@
-# Helpful Tips for HR students
+# Full Stack Cheatsheets
 
-Some helpfuls files that may be helpful when using technologies in the sprints.
-
-### [React 101](topics/react.md)
-
-### [Server Concepts](topics/server-concepts.md)
-
-### [Diagramming](topics/diagramming.md)
+A collection of cheatsheets for some of the popular technologies used in Web Development.
