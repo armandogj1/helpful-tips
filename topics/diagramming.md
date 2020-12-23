@@ -6,23 +6,23 @@
 
 ```javascript
 				[1, 8, 6, 2, 5, 4, 8, 3, 7]
-			i =  0
-			j =  0  1  2  3  4  5  6  7  8
-	width	  =  0  1  2  3  4  5  6  7  8
+			i     =  0
+			j     =  0  1  2  3  4  5  6  7  8
+	width	    =  0  1  2  3  4  5  6  7  8
 	minHeight =  1  1  1  1  1  1  1  1  1
 	currArea  =  0  1  2  3  4  5  6  7  8
 	maxArea   =  0  1  2  3  4  5  6  7  8
 
-			i =     1
-			j =     1  2  3  4  5  6  7  8
+			i     =     1
+			j     =     1  2  3  4  5  6  7  8
 	width     =     0  1  2  3  4  5  6  7
 	minHeight =     8  6  2  5  4  8  3  7
 	currArea  =     0  6  4 15 16 40 18 49
 	maxArea   =  8  8  8  8 15 16 40 40 49
 
-			i =        2
-			j =        2  3  4  5  6  7  8
-	width     = 	   0  1  2  3  4  5  6
+			i     =        2
+			j     =        2  3  4  5  6  7  8
+	width     = 	     0  1  2  3  4  5  6
 	minHeight =        6  2  5  4  6  3  6
 	currArea  =        0  2 10 12 24 15 36
 	maxArea.  = 49 49 49 49 49 49 49 49 49
@@ -41,6 +41,10 @@
   | i         | 0   | 1   | 2   | 3   | 4   | 5   |
   | minPrice  | 7   | 1   | 1   | 1   | 1   | 1   |
   | maxProfit | 0   | 0   | 4   | 4   | 5   | 5   |
+
+## Longest Substring Without Repeating Characters
+
+- Iterate over the string, track the chars with storing the position of the following char.
 
 ```javascript
 // step 0
