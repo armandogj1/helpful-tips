@@ -1,7 +1,7 @@
 # Diagramming
 
 - Though it may be tricky to do so on a zoom setting while screen sharing, diagramming is an important step in the interview process. Having an example up where you can iterate through each step may facilitate finding a solution. And also make possible pitfalls apparent.
-- Here are lengthy examples of a diagrams using a text editor. Some values could be simply updated as you iterate through the steps:
+- Here are lengthy examples of diagrams using a text editor. Some values could be simply updated as you iterate through the steps instead of repeating the whole:
 
 ## Container with the Most water
 
