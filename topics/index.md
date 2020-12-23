@@ -2,8 +2,8 @@
 
 Some cheatsheets that may be helpful when using technologies in the sprints.
 
-### [React 101](topics/react.md)
+### [React 101](/react.md)
 
-### [Server Concepts](topics/server-concepts.md)
+### [Server Concepts](/server-concepts.md)
 
-### [Diagramming](topics/diagramming.md)
+### [Diagramming](/diagramming.md)
