@@ -30,9 +30,9 @@ Routes containing URL parameters like http://localhost:8000/products/1
 
 ```javascript
 app.get('/prducts/:id/', (req, res) => {
-	console.log(req.params); // logs {id: 1}
+  console.log(req.params); // logs {id: 1}
 
-	const id = req.params.id;
+  const id = req.params.id;
 });
 ```
 
@@ -46,17 +46,17 @@ Request sending data as an object can be accessed in the body
 ```javascript
 // client request
 axios.post('/products/review', {
-	id: 1,
-	title: 'Great Shoes',
-	text: 'So comfy I wear them in bed',
+  id: 1,
+  title: 'Great Shoes',
+  text: 'So comfy I wear them in bed',
 });
 
 // server app
 app.use(bodyParser.json());
 
 app.post('/products/review', (req, res) => {
-	const { id, title, text } = req.body; // destructuring the values
+  const { id, title, text } = req.body; // destructuring the values
 
-	console.log(text); // logs: So comfy I wear them in bed
+  console.log(text); // logs: So comfy I wear them in bed
 });
 ```

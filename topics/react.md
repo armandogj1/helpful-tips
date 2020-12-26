@@ -23,22 +23,22 @@ const FactsList = (props) => {
 ```jsx
 // Class Component
 class App extends React.Component {
-	//.....
-	render() {
-		return (
-			// We need to use the keyword 'this'
-			<p> {this.props.hello} </p>
-		);
-	}
+  //.....
+  render() {
+    return (
+      // We need to use the keyword 'this'
+      <p> {this.props.hello} </p>
+    );
+  }
 }
 
 // Functional Component
 const App = (props) => {
-	//.....
-	return (
-		// Being a functional component props is an argument passed to it
-		<p> {props.hello} </p>
-	);
+  //.....
+  return (
+    // Being a functional component props is an argument passed to it
+    <p> {props.hello} </p>
+  );
 };
 ```
 
@@ -46,18 +46,18 @@ const App = (props) => {
 
 ```jsx
 const Fact = (props) => (
-	//..
+  //..
   return (
     // Chaining can get long if props contains lots of nested objects
-	  <h1>{props.fact.animal}</h1>
+    <h1>{props.fact.animal}</h1>
   )
 );
 
 const Fact = ({ fact, handleFavoriteClick }) => (
-	//..
+  //..
   return (
     // Fact itself could also be destructured
-	  <h1>{fact.animal}</h1>
+    <h1>{fact.animal}</h1>
   )
 );
 ```
@@ -68,27 +68,27 @@ const Fact = ({ fact, handleFavoriteClick }) => (
 
 ```jsx
 const FactsList = ({ facts, handleClick }) => {
-	return (
-		<div>
-			{/** All siblings need to be wrapped into a single element */}
-			<h1>These are FactsLists Children</h1>
-			<Fact
-				key={facts[0].id} // React wants unique keys for siblings
-				fact={facts[0]} // We pass fact located at index 0
-				handleFavoriteClick={handleClick} // click handler is shared by all children
-			/>
-			<Fact
-				key={facts[1].id}
-				fact={facts[1]}
-				handleFavoriteClick={handleClick}
-			/>
-			<Fact
-				key={facts[2].id}
-				fact={facts[2]}
-				handleFavoriteClick={handleClick}
-			/>
-		</div>
-	);
+  return (
+    <div>
+      {/** All siblings need to be wrapped into a single element */}
+      <h1>These are FactsLists Children</h1>
+      <Fact
+        key={facts[0].id} // React wants unique keys for siblings
+        fact={facts[0]} // We pass fact located at index 0
+        handleFavoriteClick={handleClick} // click handler is shared by all children
+      />
+      <Fact
+        key={facts[1].id}
+        fact={facts[1]}
+        handleFavoriteClick={handleClick}
+      />
+      <Fact
+        key={facts[2].id}
+        fact={facts[2]}
+        handleFavoriteClick={handleClick}
+      />
+    </div>
+  );
 };
 ```
 
@@ -97,22 +97,22 @@ const FactsList = ({ facts, handleClick }) => {
 
 ```jsx
 const FactsList = ({ facts, handleClick }) => {
-	return (
-		<div>
-			{
-				// include javascript code inside curly braces
-				facts.map((
-					curFact,
-					idx // the map returns an array of components
-				) => (
-					<Fact
-						key={idx} // React wants unique keys for siblings, the current index works most cases
-						fact={curFact} // We pass the current fact as a prop
-						handleFavoriteClick={handleClick} // click handler is shared by all children
-					/>
-				))
-			}
-		</div>
-	);
+  return (
+    <div>
+      {
+        // include javascript code inside curly braces
+        facts.map((
+          curFact,
+          idx // the map returns an array of components
+        ) => (
+          <Fact
+            key={idx} // React wants unique keys for siblings, the current index works most cases
+            fact={curFact} // We pass the current fact as a prop
+            handleFavoriteClick={handleClick} // click handler is shared by all children
+          />
+        ))
+      }
+    </div>
+  );
 };
 ```
