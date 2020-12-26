@@ -1,6 +1,6 @@
 ---
 title: React 101
-parent: topics
+parent: Topics
 # nav_exclude: true
 ---
 

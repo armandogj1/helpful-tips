@@ -1,6 +1,6 @@
 ---
 title: Diagramming
-parent: topics
+parent: Topics
 # nav_exclude: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Server Concepts
-parent: topics
+parent: Topics
 # nav_exclude: true
 ---
 
