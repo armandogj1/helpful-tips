@@ -1,3 +1,8 @@
+---
+title: React 101
+nav_exclude: true
+---
+
 # React 101
 
 ### Passing Props

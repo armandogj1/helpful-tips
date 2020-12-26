@@ -1,5 +1,6 @@
 ---
 title: Query, Params and Body
+nav_exclude: true
 ---
 
 # Query, Params and Body

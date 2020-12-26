@@ -1,3 +1,8 @@
+---
+title: Diagramming
+nav_exclude: true
+---
+
 # Diagramming
 
 - Though it may be tricky to do so on a zoom setting while screen sharing, diagramming is an important step in the interview process. Having an example up where you can iterate through each step may facilitate finding a solution. And also make possible pitfalls apparent.

@@ -1,3 +1,8 @@
+---
+title: Server Concepts
+nav_exclude: true
+---
+
 # Server concepts
 
 ## High Level
