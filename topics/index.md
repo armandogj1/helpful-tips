@@ -1,5 +1,6 @@
 ---
 title: Topics
+has_children: true
 ---
 
 # Topics
