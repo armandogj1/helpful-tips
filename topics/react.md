@@ -15,7 +15,7 @@ const FactsList = (props) => {
     {
       props.facts.map( //....
     }
-  );
+);
 ```
 
 - Class and functional components get props but are accessed slightly differently
