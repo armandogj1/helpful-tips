@@ -15,7 +15,7 @@ URL containing query strings like http://localhost:8000/products?count=10&page=1
 - All the '=' separated strings following the question mark
 - Will be found in the query object present in the request
 
-```javascript
+```js
   // In the controller
   console.log(req.query);
 
