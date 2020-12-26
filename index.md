@@ -1,7 +1,7 @@
----
+<!-- ---
 layout: page
 title: Main
----
+--- -->
 
 # Full Stack Cheatsheets
 
