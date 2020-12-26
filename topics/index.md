@@ -1,3 +1,8 @@
+---
+layout: page
+title: Topics
+---
+
 # Topics
 
 Some cheatsheets that may be helpful when using technologies in the sprints.
