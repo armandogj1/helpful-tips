@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Query, Params and Body
 ---
 
