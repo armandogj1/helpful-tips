@@ -1,3 +1,8 @@
+---
+layout: page
+title: Query, Params and Body
+---
+
 # Query, Params and Body
 
 ## Accessing data in the controllers
