@@ -50,6 +50,19 @@ var jenBound = eat.bind(jen); // explicit binding
 jenBound(); // jen bound as context, this will refer to the jen object
 ```
 
+Using a method as a callback of a Higher Order Function
+
+```js
+setTimeout(bob.eat, 1000); // the method will be passed as a Free Function losing its context
+// setTimeout only gets the function and not the object containing the method.
+// Think of it being called like so eat() and not bob.eat(). There is nothing left of the dot
+
+setTimeout(jenBound, 1000); // jen is bound as the context and this will reference jen when invoked
+
+setTimeout(() => bob.eat(), 1000); // defining an arrow function which will invoke bob.eat keeps context
+// it does so through closure. The arrow is defined in place and passed as the first argument. bob is in the arrow functions outer scope and closes on it. Wherever setTimeout invokes the callback it remembers the values in its scope, which allows it to call the eat method of bob. The context is maintained because bob is left of the dot
+```
+
 Remember:
 
 The hierarchy, from most to least "important", is:
