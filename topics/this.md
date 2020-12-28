@@ -51,6 +51,8 @@ jenBound(); // jen bound as context, this will refer to the jen object
 ```
 
 Using a method as a callback of a Higher Order Function
+In setTimeout and other Higher Order Functions that use callbacks,
+the callbacks are always called as FFI's
 
 ```js
 setTimeout(bob.eat, 1000); // the method will be passed as a Free Function losing its context
@@ -62,13 +64,3 @@ setTimeout(jenBound, 1000); // jen is bound as the context and this will referen
 setTimeout(() => bob.eat(), 1000); // defining an arrow function which will invoke bob.eat keeps context
 // it does so through closure. The arrow is defined in place and passed as the first argument. bob is in the arrow functions outer scope and closes on it. Wherever setTimeout invokes the callback it remembers the values in its scope, which allows it to call the eat method of bob. The context is maintained because bob is left of the dot
 ```
-
-Remember:
-
-The hierarchy, from most to least "important", is:
-"new" keyword
-Explicit binding
-Implicit binding
-Free Function Invocation (FFI)
-In setTimeout and other Higher Order Functions that use callbacks,
-the callbacks are always called as FFI's.
