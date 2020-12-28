@@ -62,5 +62,7 @@ setTimeout(bob.eat, 1000); // the method will be passed as a Free Function losin
 setTimeout(jenBound, 1000); // jen is bound as the context and this will reference jen when invoked
 
 setTimeout(() => bob.eat(), 1000); // defining an arrow function which will invoke bob.eat keeps context
-// it does so through closure. The arrow is defined in place and passed as the first argument. bob is in the arrow functions outer scope and closes on it. Wherever setTimeout invokes the callback it remembers the values in its scope, which allows it to call the eat method of bob. The context is maintained because bob is left of the dot
+// it does so through closure. The arrow is defined in place and passed as the first argument. bob is in the arrow functions outer scope and closes on it.
+// Wherever setTimeout invokes the callback it remembers the values in its scope, which allows it to call the eat method of bob.
+// The context is maintained because bob is left of the dot
 ```
