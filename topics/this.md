@@ -17,6 +17,7 @@ var eat = function () {
 // calling eat as a Free Function
 eat();
 // if using strict mode
+// this will be undefined
 // an error will be thrown
 ("TypeError: Cannot set property 'eating' of undefined");
 // otherwise
